@@ -11,6 +11,11 @@
 $ npm start
 ```
 
+To run in development mode, without the redux devtools pane use:
+```shell
+$ npm run dev:no-debug
+```
+
 ## Features
 
 - [x] React 0.14
