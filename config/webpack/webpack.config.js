@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../'
 import base from './environments/_base'
 
 // We first load the configuration overrides for the current
