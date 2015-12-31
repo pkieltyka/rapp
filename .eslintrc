@@ -1,0 +1,24 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NEW_WINDOW__" : false,
+    "React": true,
+    "ReactDOM": true
+  },
+  "rules": {
+    "semi" : [2, "never"],
+    "space-before-function-paren": [2, "never"],
+    "key-spacing": [2, "mode": "minimum"],
+    "react-in-jsx-scope": 0
+  }
+}
