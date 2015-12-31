@@ -1,0 +1,19 @@
+@import './check.css';
+
+.counter {
+  font-weight: bold;
+}
+
+.counter--green {
+  composes: counter;
+  color: rgb(25,200,25);
+}
+
+@media (max-width: 100px) {
+    .counter {
+      color: red;
+    }
+    .counter--green {
+      color: yellow;
+    }
+}

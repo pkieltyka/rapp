@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import { actions as counterActions } from 'store/modules/counter'
-import styles from './styles.scss'
+import styles from './styles.css'
 
 import Test from 'components/Test'
 

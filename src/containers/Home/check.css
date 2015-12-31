@@ -1,0 +1,26 @@
+/*@custom-media --small-viewport (max-width: 1000px);
+
+@media (--small-viewport) {
+    .counter {
+      color: red;
+    }
+    .counter--green {
+      color: yellow;
+    }
+}*/
+
+/*@custom-media --small-viewport (max-width: 1000px);*/
+
+@media (max-width: 100px) {
+    .counter {
+      color: red;
+    }
+    .counter--green {
+      color: yellow;
+    }
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 50px !important;
+}

@@ -24,7 +24,6 @@ $ npm start
 - [x] Redux-thunk
 - [x] PostCSS, autoprefixer, cssnano
 - [x] CSS Modules enabled
-- [x] Sass
 - [x] Simple sample app
 - [ ] Production configuration/builds
 

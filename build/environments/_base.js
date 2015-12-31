@@ -78,15 +78,6 @@ const webpackConfig = {
         loader: 'json'
       },
       {
-        test: /\.scss$/,
-        loaders: [
-          'style',
-          CSS_LOADER,
-          'postcss',
-          'sass'
-        ]
-      },
-      {
         test: /\.css$/,
         loaders: [
           'style',
@@ -104,10 +95,12 @@ const webpackConfig = {
       /* eslint-enable */
     ]
   },
-  sassLoader: {
-    includePaths: paths.client('styles')
-  },
   postcss: [
+    require('postcss-import')({
+      addDependencyTo: webpack
+    }),
+    require('postcss-nested'),
+    require('postcss-custom-media'),
     cssnano({
       sourcemap: true,
       autoprefixer: {
