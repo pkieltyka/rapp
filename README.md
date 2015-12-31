@@ -1,5 +1,18 @@
 # React App Boilerplate
 
+## Setup
+
+1. Install node 5+. I recommend: https://github.com/tj/n to manage node versions
+2. npm install
+
+## Usage
+
+```shell
+$ npm start
+```
+
+## Features
+
 - [x] React 0.14
 - [x] Redux 3
 - [x] Babel 6+
@@ -13,6 +26,7 @@
 - [x] CSS Modules enabled
 - [x] Sass
 - [x] Simple sample app
+- [ ] Production configuration/builds
 
 ### NOTES
 
