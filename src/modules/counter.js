@@ -6,6 +6,11 @@ import { createAction, handleActions } from 'redux-actions'
 const INCREMENT = 'counter/INCREMENT'
 
 //
+// Actions
+//
+export const increment = createAction(INCREMENT, (value = 1) => value)
+
+//
 // Reducer
 //
 const reducer = handleActions({
@@ -13,8 +18,3 @@ const reducer = handleActions({
 }, 1)
 
 export default reducer
-
-//
-// Action Creators
-//
-export const increment = createAction(INCREMENT, (value = 1) => value)
