@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import createBrowserHistory from 'history/lib/createBrowserHistory'
-import { syncReduxAndRouter } from 'redux-simple-router'
-import { Router } from 'react-router'
-import routes from 'routes'
-
 import { Provider } from 'react-redux'
 import configureStore from 'store/configureStore'
 
-const history = createBrowserHistory()
+import { Router } from 'react-router'
+import { createHistory, useBasename } from 'history'
+import { syncReduxAndRouter } from 'redux-simple-router'
+import routes from 'routes'
+
+const history = useBasename(createHistory)({
+  basename: __BASENAME__
+})
 const store = configureStore(window.__INITIAL_STATE__)
 
 syncReduxAndRouter(history, store, (state) => state.router)
